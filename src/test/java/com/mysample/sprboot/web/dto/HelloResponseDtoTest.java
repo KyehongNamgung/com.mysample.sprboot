@@ -1,6 +1,5 @@
-package com.mysample.sprboot.dto;
+package com.mysample.sprboot.web.dto;
 
-import com.mysample.sprboot.web.dto.HelloResponseDto;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
