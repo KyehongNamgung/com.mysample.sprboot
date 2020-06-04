@@ -2,8 +2,10 @@ package com.mysample.sprboot.web.dto;
 
 import com.mysample.sprboot.domain.posts.Posts;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class PostsResponseDto {
      private Long id;
      private String title;
