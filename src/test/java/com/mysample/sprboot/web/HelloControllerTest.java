@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -17,8 +18,9 @@ public class HelloControllerTest {
     @Autowired
     private MockMvc mvc;
 
+    @WithMockUser(roles="USER")
     @Test
-    public void hello가_리턴된다() throws Exception {
+    public void hello_returning() throws Exception {
         String hello = "hello";
 
         mvc.perform(get("/hello"))
@@ -26,8 +28,9 @@ public class HelloControllerTest {
                 .andExpect(content().string(hello));
     }
 
+    @WithMockUser(roles="USER")
     @Test
-    public void helloDto가_리턴된다() throws Exception {
+    public void helloDto_returning() throws Exception {
         String name = "hello";
         int amount = 1000;
 

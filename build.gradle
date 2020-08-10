@@ -34,15 +34,19 @@ dependencies {
     //compile('org.springframework.boot:spring-boot-starter-web')
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
     compile('org.projectlombok:lombok:1.18.10')
     annotationProcessor 'org.projectlombok:lombok:1.18.10'
     //compile('org.springframework.boot:spring-boot-starter-data-jpa')
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     //compile('com.h2database:h2')
     implementation 'com.h2database:h2:1.4.200'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    implementation 'org.springframework.session:spring-session-jdbc'
 
     testCompile('org.projectlombok:lombok:1.18.10')
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
+    testCompile("org.springframework.security:spring-security-test")
 
     //testCompile('org.springframework.boot:spring-boot-starter-test')
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
