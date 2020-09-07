@@ -23,16 +23,12 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="2d697986-e68a-4fed-b1b4-5f8239c07b60">
-        <schema name="mysql" object-types="table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2d697986-e68a-4fed-b1b4-5f8239c07b60">
       <console name="freelec" type="STANDARD" schema="mysql" session="Main" />
-      <console name="freelec 2" type="STANDARD" schema="mysql" session="Main">use freelec_springboot2_webservice;
+      <console name="freelec 2" type="STANDARD" schema="mysql" session="Main"><![CDATA[use freelec_springboot2_webservice;
 
 show variables like 'c%';
 
@@ -50,7 +46,7 @@ CREATE TABLE test (
 
 insert into test(content) value ('테스트');
 
-select * from test;</console>
+select * from test;]]></console>
     </connection>
     <connection id="7718442e-b828-45f5-a10f-559b99fb2d6f">
       <console name="Connection" type="STANDARD" schema="" session="Main" />
