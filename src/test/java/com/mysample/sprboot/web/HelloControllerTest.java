@@ -1,18 +1,18 @@
 package com.mysample.sprboot.web;
 
+/*
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(controllers = HelloController.class)
+//@WebMvcTest(controllers = HelloController.class)
 public class HelloControllerTest {
     @Autowired
     private MockMvc mvc;
 
-    /*
+
     @WithMockUser(roles="USER")
     @Test
     public void hello_returning() throws Exception {
@@ -38,5 +38,5 @@ public class HelloControllerTest {
                         .andExpect(jsonPath("$.amount", is(amount)));
 
     }
-    */
 }
+*/

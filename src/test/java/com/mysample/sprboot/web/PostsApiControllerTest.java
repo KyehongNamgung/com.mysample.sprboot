@@ -1,11 +1,12 @@
 package com.mysample.sprboot.web;
 
+/*
+
 import com.mysample.sprboot.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -16,8 +17,8 @@ import org.springframework.web.context.WebApplicationContext;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.
-        WebEnvironment.RANDOM_PORT)
+//@SpringBootTest(webEnvironment = SpringBootTest.
+//        WebEnvironment.RANDOM_PORT)
 public class PostsApiControllerTest {
     @LocalServerPort
     private int port;
@@ -45,8 +46,7 @@ public class PostsApiControllerTest {
         postsRepository.deleteAll();
     }
 
-    /*
-    @Test
+     @Test
     @WithMockUser(roles="USER")
     public void Posts_Registration() throws Exception {
         //given
@@ -125,5 +125,5 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getContent()).
                 isEqualTo(expectedContent);
     }
-    */
 }
+*/
