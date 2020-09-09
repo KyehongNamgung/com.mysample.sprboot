@@ -11,8 +11,13 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'com.ewerk.gradle.plugins.querydsl'
 apply plugin: 'cobertura'
 
+/*
 bootWar {
     archiveName = 'ROOT.war'
+}
+*/
+bootJar {
+    archiveName = 'ROOT.jar'
 }
 
 group 'com.mysample.sprboot'
