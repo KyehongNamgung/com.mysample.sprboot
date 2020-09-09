@@ -20,6 +20,7 @@ bootJar {
     archiveName = 'ROOT.jar'
 }
 
+
 group 'com.mysample.sprboot'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
